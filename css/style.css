@@ -1,22 +1,108 @@
-body {
-	color: #ffffff;
-	font-family:Monospace;
-	font-size:13px;
-	text-align:center;
+/* FONTS ############ */
 
+@font-face {
+	font-family: "MuseoSans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../font/museosans_700-webfont.woff");
+}
+
+@font-face {
+	font-family: "MuseoSans";
+	font-style: normal;
+	font-weight: 500;
+	src: url("../font/museosans_500-webfont-webfont.woff");
+}
+
+@font-face {
+	font-family: "MuseoSans";
+	font-style: normal;
+	font-weight: 300;
+	src: url("../font/museosans_300-webfont.woff");
+}
+
+@font-face {
+	font-family: "MuseoSans";
+	font-style: normal;
+	font-weight: 100;
+	src: url("../font/museosans_100-webfont.woff");
+}
+
+/* CONTAINER ############ */
+
+body {
 	background-color: #ffffff;
-	margin: 0px;
+	margin: 0px; padding: 0;
 	overflow: hidden;
 }
 
-#about {
-	position: absolute;
-	top: 0px; width: 100%;
-	padding: 5px;
+/* NAVIGATION ############ */
+
+header {
+	z-index: 99;
+	position: fixed;
+	height: 50px;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.75);
 }
 
-#more {
+#proj-logo {
+	position: fixed;
+	height: 35px;
+	width: 35px;
+	right: 15px;
+	top: 15px;
+}
+
+#nav {
+	position: fixed;
+	z-index: 100;
+	margin: 0;
+	top: 20px;
+	left: 50px;
+}
+
+#logo {
+	height: 35px;
+	width: 35px;
+	margin-top: 30px;
+	margin-left: 15px;
+}
+
+.txt {
+	color: #313131;
+	font-family: MuseoSans, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+}
+
+h4.txt {
+	font-weight: 100;
+}
+
+h4 > a {
+	color: #313131;
+	text-decoration: none;
+}
+
+h4 a:hover {
+	color: #313131;
+	text-decoration: none;
+	font-weight: 700;
+}
+
+/* MIS ############ */
+
+#code {
 	position: absolute;
-	bottom: 0px; width: 100%;
+	font-weight: 300;
+	bottom: 0; left: 43%; right: 57%;
+	width: 100%;
 	padding: 5px;
+	text-decoration: none;
+}
+
+#git-logo {
+	height: 20px;
+	width: 20px;
 }

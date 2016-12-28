@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
-		<title>Boids</title>
+		<title>Foids</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="css/style.css" type="text/css"/>
 	</head>
 	<body>
 
-		<div id="about">Boids Flocking Simulation</div>
+		<script>
+			function f_hover(element) { element.setAttribute('src', 'img/primary/project2.png'); }
+			function f_unhover(element){element.setAttribute('src', 'img/primary/project.png'); }
+			function g_hover(element, github) { element.style.color = '#528dd0'; github.setAttribute('src', 'img/logos/github-logo2.png'); }
+			function g_unhover(element, github) { element.style.color = '#313131'; github.setAttribute('src', 'img/logos/github-logo.png'); }
+		</script>
+
+		<header>
+			<a href="http://noelnegusse.com/">
+				<img id="logo" src="img/primary/logo.png"/>
+			</a>
+			<h4 class="txt" id="nav">
+				<a href="http://noelnegusse.com/"> Portfolio </a>
+				<a href="http://noelnegusse.com/blog.html"> Blog </a>
+				<a href="http://noelnegusse.com/#sectionD"> Contact </a>
+			</h4>
+			<a href="https://github.com/tunneln/foids">
+				<img id="proj-logo" src="img/primary/project.png" onmouseover="f_hover(this);" onmouseout="f_unhover(this);" target="_blank"/>
+			</a>
+		</header>
 
 		<script src="js/libs/three.js"></script>
 		<script src="js/libs/Projector.js"></script>
 		<script src="js/libs/CanvasRenderer.js"></script>
 
-		<script src="js/Blob.js"></script>
+		<script src="js/Fish.js"></script>
 		<script src="js/Particle.js"></script>
 		<script src="js/script.js"></script>
 
-		<div id="more"><a href="https://github.com/tunneln/Boids" target="_blank">Source Code</a></div>
+		<a href="https://github.com/tunneln/foids" class="txt" id="code"
+		onmouseover="g_hover(this, getElementById('git-logo'));" onmouseout="g_unhover(this, getElementById('git-logo'));" target="_blank">
+			Fish Schooling Simulation <img id="git-logo" src="img/logos/github-logo.png"/>
+		</a>
 	</body>
 </html>
