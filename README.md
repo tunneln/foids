@@ -12,3 +12,5 @@ The intereaction of individual agents, or fish, adheres to 3 primary rules:
 These rules collectively simulate the complexity of swarm intelligence often seen in animals.
 Additional rules, such as, mouse obstacle avoidance and goal seeking were also implemented.
 
+
+The working demo can be found [here](http://noelnegusse.com/foids)
